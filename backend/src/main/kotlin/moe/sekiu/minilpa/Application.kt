@@ -4,6 +4,7 @@ import io.ktor.serialization.kotlinx.json.*
 import io.ktor.server.application.*
 import io.ktor.server.cio.*
 import io.ktor.server.engine.*
+import io.ktor.server.http.content.*
 import io.ktor.server.plugins.contentnegotiation.*
 import io.ktor.server.plugins.cors.routing.*
 import io.ktor.server.response.*
@@ -93,5 +94,10 @@ fun Application.module() {
 
         // WebSocket 路由
         configureProgressWebSocket()
+
+        // 服务静态文件（前端）
+        staticResources("/", "static") {
+            default("index.html")
+        }
     }
 }

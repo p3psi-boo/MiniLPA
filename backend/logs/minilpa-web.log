@@ -149,3 +149,501 @@ moe.sekiu.minilpa.exception.OperationFailureException: lpac output not captured
 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:811)
 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:715)
 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:702)
+2025-12-04 07:45:31.684 [DefaultDispatcher-worker-2] INFO  ktor.application - Autoreload is disabled because the development mode is off.
+2025-12-04 07:45:31.862 [DefaultDispatcher-worker-2] INFO  ktor.application - Application started in 0.196 seconds.
+2025-12-04 07:45:31.878 [DefaultDispatcher-worker-4] INFO  ktor.application - Responding at http://127.0.0.1:8080
+2025-12-04 07:45:32.905 [main] INFO  m.sekiu.minilpa.util.BrowserLauncher - 已在 Linux 上打开浏览器: http://localhost:8080
+2025-12-04 07:45:33.627 [DefaultDispatcher-worker-18] INFO  DeviceRoutes - 获取设备列表
+2025-12-04 07:45:33.629 [DefaultDispatcher-worker-18] INFO  LPACExecutor - lpac command input -> driver apdu list
+2025-12-04 07:45:33.644 [DefaultDispatcher-worker-18] INFO  LPACExecutor - Using lpac at: /nix/store/5qav3fcqr98jxr9wm051v5vn6az9k64w-lpac-2.3.0/bin/lpac
+2025-12-04 07:45:33.663 [DefaultDispatcher-worker-24] INFO  ProgressWebSocket - 新的 WebSocket 连接，当前连接数: 1
+2025-12-04 07:45:33.680 [DefaultDispatcher-worker-28] ERROR DeviceRoutes - 获取设备列表失败
+moe.sekiu.minilpa.exception.OperationFailureException: lpac output not captured
+	at moe.sekiu.minilpa.lpa.LPACExecutor.execute(LPACExecutor.kt:190)
+	at moe.sekiu.minilpa.lpa.LPACExecutor$execute$1.invokeSuspend(LPACExecutor.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.UndispatchedCoroutine.afterResume(CoroutineContext.kt:266)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:28)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:111)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:99)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:811)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:715)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:702)
+2025-12-04 07:45:57.313 [DefaultDispatcher-worker-15] INFO  DeviceRoutes - 获取设备列表
+2025-12-04 07:45:57.313 [DefaultDispatcher-worker-15] INFO  LPACExecutor - lpac command input -> driver apdu list
+2025-12-04 07:45:57.313 [DefaultDispatcher-worker-15] INFO  LPACExecutor - Using lpac at: /nix/store/5qav3fcqr98jxr9wm051v5vn6az9k64w-lpac-2.3.0/bin/lpac
+2025-12-04 07:45:57.333 [DefaultDispatcher-worker-19] ERROR DeviceRoutes - 获取设备列表失败
+moe.sekiu.minilpa.exception.OperationFailureException: lpac output not captured
+	at moe.sekiu.minilpa.lpa.LPACExecutor.execute(LPACExecutor.kt:190)
+	at moe.sekiu.minilpa.lpa.LPACExecutor$execute$1.invokeSuspend(LPACExecutor.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.UndispatchedCoroutine.afterResume(CoroutineContext.kt:266)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:28)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:111)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:99)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:811)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:715)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:702)
+2025-12-04 07:45:57.339 [DefaultDispatcher-worker-11] INFO  ProfileRoutes - 获取配置文件列表
+2025-12-04 07:45:57.339 [DefaultDispatcher-worker-11] INFO  moe.sekiu.minilpa.lpa.LPAManager - 初始化 LPACExecutor
+2025-12-04 07:45:57.339 [DefaultDispatcher-worker-11] INFO  LPACExecutor - lpac command input -> profile list
+2025-12-04 07:45:57.339 [DefaultDispatcher-worker-11] INFO  LPACExecutor - Using lpac at: /nix/store/5qav3fcqr98jxr9wm051v5vn6az9k64w-lpac-2.3.0/bin/lpac
+2025-12-04 07:45:57.363 [DefaultDispatcher-worker-26] INFO  LPACExecutor - lpac stdout output -> {"type":"lpa","payload":{"code":-1,"message":"euicc_init","data":""}}
+2025-12-04 07:45:57.363 [DefaultDispatcher-worker-11] INFO  LPACExecutor - lpac stderr output -> error: create mbim device from path failed: Couldn't query file info: Error when getting information for file “/dev/cdc-wdm0”: No such file or directory
+2025-12-04 07:45:57.374 [DefaultDispatcher-worker-26] ERROR ProfileRoutes - 获取配置文件列表失败
+moe.sekiu.minilpa.exception.LPAOperationFailureException: euicc_init
+	at moe.sekiu.minilpa.model.LPACIO$Payload$LPA.assertSuccess(LPACIO.kt:59)
+	at moe.sekiu.minilpa.lpa.LPACExecutor.execute(LPACExecutor.kt:191)
+	at moe.sekiu.minilpa.lpa.LPACExecutor$execute$1.invokeSuspend(LPACExecutor.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.UndispatchedCoroutine.afterResume(CoroutineContext.kt:266)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:28)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:111)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:99)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:811)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:715)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:702)
+2025-12-04 07:45:58.208 [DefaultDispatcher-worker-26] INFO  DeviceRoutes - 获取设备列表
+2025-12-04 07:45:58.208 [DefaultDispatcher-worker-26] INFO  LPACExecutor - lpac command input -> driver apdu list
+2025-12-04 07:45:58.208 [DefaultDispatcher-worker-26] INFO  LPACExecutor - Using lpac at: /nix/store/5qav3fcqr98jxr9wm051v5vn6az9k64w-lpac-2.3.0/bin/lpac
+2025-12-04 07:45:58.228 [DefaultDispatcher-worker-4] ERROR DeviceRoutes - 获取设备列表失败
+moe.sekiu.minilpa.exception.OperationFailureException: lpac output not captured
+	at moe.sekiu.minilpa.lpa.LPACExecutor.execute(LPACExecutor.kt:190)
+	at moe.sekiu.minilpa.lpa.LPACExecutor$execute$1.invokeSuspend(LPACExecutor.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.UndispatchedCoroutine.afterResume(CoroutineContext.kt:266)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:28)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:111)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:99)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:811)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:715)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:702)
+2025-12-04 07:45:58.233 [DefaultDispatcher-worker-1] INFO  NotificationRoutes - 获取通知列表
+2025-12-04 07:45:58.234 [DefaultDispatcher-worker-1] INFO  LPACExecutor - lpac command input -> notification list
+2025-12-04 07:45:58.234 [DefaultDispatcher-worker-1] INFO  LPACExecutor - Using lpac at: /nix/store/5qav3fcqr98jxr9wm051v5vn6az9k64w-lpac-2.3.0/bin/lpac
+2025-12-04 07:45:58.260 [DefaultDispatcher-worker-21] INFO  LPACExecutor - lpac stdout output -> {"type":"lpa","payload":{"code":-1,"message":"euicc_init","data":""}}
+2025-12-04 07:45:58.260 [DefaultDispatcher-worker-7] INFO  LPACExecutor - lpac stderr output -> error: create mbim device from path failed: Couldn't query file info: Error when getting information for file “/dev/cdc-wdm0”: No such file or directory
+2025-12-04 07:45:58.261 [DefaultDispatcher-worker-21] ERROR NotificationRoutes - 获取通知列表失败
+moe.sekiu.minilpa.exception.LPAOperationFailureException: euicc_init
+	at moe.sekiu.minilpa.model.LPACIO$Payload$LPA.assertSuccess(LPACIO.kt:59)
+	at moe.sekiu.minilpa.lpa.LPACExecutor.execute(LPACExecutor.kt:191)
+	at moe.sekiu.minilpa.lpa.LPACExecutor$execute$1.invokeSuspend(LPACExecutor.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.UndispatchedCoroutine.afterResume(CoroutineContext.kt:266)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:28)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:111)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:99)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:811)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:715)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:702)
+2025-12-04 07:45:59.027 [DefaultDispatcher-worker-25] INFO  DeviceRoutes - 获取设备列表
+2025-12-04 07:45:59.027 [DefaultDispatcher-worker-25] INFO  LPACExecutor - lpac command input -> driver apdu list
+2025-12-04 07:45:59.027 [DefaultDispatcher-worker-25] INFO  LPACExecutor - Using lpac at: /nix/store/5qav3fcqr98jxr9wm051v5vn6az9k64w-lpac-2.3.0/bin/lpac
+2025-12-04 07:45:59.048 [DefaultDispatcher-worker-1] ERROR DeviceRoutes - 获取设备列表失败
+moe.sekiu.minilpa.exception.OperationFailureException: lpac output not captured
+	at moe.sekiu.minilpa.lpa.LPACExecutor.execute(LPACExecutor.kt:190)
+	at moe.sekiu.minilpa.lpa.LPACExecutor$execute$1.invokeSuspend(LPACExecutor.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.UndispatchedCoroutine.afterResume(CoroutineContext.kt:266)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:28)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:111)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:99)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:811)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:715)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:702)
+2025-12-04 07:45:59.053 [DefaultDispatcher-worker-11] INFO  ChipRoutes - 获取芯片信息
+2025-12-04 07:45:59.053 [DefaultDispatcher-worker-11] INFO  LPACExecutor - lpac command input -> chip info
+2025-12-04 07:45:59.053 [DefaultDispatcher-worker-11] INFO  LPACExecutor - Using lpac at: /nix/store/5qav3fcqr98jxr9wm051v5vn6az9k64w-lpac-2.3.0/bin/lpac
+2025-12-04 07:45:59.075 [DefaultDispatcher-worker-7] INFO  LPACExecutor - lpac stdout output -> {"type":"lpa","payload":{"code":-1,"message":"euicc_init","data":""}}
+2025-12-04 07:45:59.075 [DefaultDispatcher-worker-28] INFO  LPACExecutor - lpac stderr output -> error: create mbim device from path failed: Couldn't query file info: Error when getting information for file “/dev/cdc-wdm0”: No such file or directory
+2025-12-04 07:45:59.076 [DefaultDispatcher-worker-7] ERROR ChipRoutes - 获取芯片信息失败
+moe.sekiu.minilpa.exception.LPAOperationFailureException: euicc_init
+	at moe.sekiu.minilpa.model.LPACIO$Payload$LPA.assertSuccess(LPACIO.kt:59)
+	at moe.sekiu.minilpa.lpa.LPACExecutor.execute(LPACExecutor.kt:191)
+	at moe.sekiu.minilpa.lpa.LPACExecutor$execute$1.invokeSuspend(LPACExecutor.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.UndispatchedCoroutine.afterResume(CoroutineContext.kt:266)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:28)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:111)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:99)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:811)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:715)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:702)
+2025-12-04 07:45:59.922 [DefaultDispatcher-worker-15] INFO  DeviceRoutes - 获取设备列表
+2025-12-04 07:45:59.922 [DefaultDispatcher-worker-15] INFO  LPACExecutor - lpac command input -> driver apdu list
+2025-12-04 07:45:59.922 [DefaultDispatcher-worker-15] INFO  LPACExecutor - Using lpac at: /nix/store/5qav3fcqr98jxr9wm051v5vn6az9k64w-lpac-2.3.0/bin/lpac
+2025-12-04 07:45:59.942 [DefaultDispatcher-worker-11] ERROR DeviceRoutes - 获取设备列表失败
+moe.sekiu.minilpa.exception.OperationFailureException: lpac output not captured
+	at moe.sekiu.minilpa.lpa.LPACExecutor.execute(LPACExecutor.kt:190)
+	at moe.sekiu.minilpa.lpa.LPACExecutor$execute$1.invokeSuspend(LPACExecutor.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.UndispatchedCoroutine.afterResume(CoroutineContext.kt:266)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:28)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:111)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:99)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:811)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:715)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:702)
+2025-12-04 07:45:59.947 [DefaultDispatcher-worker-1] INFO  ProfileRoutes - 获取配置文件列表
+2025-12-04 07:45:59.947 [DefaultDispatcher-worker-1] INFO  LPACExecutor - lpac command input -> profile list
+2025-12-04 07:45:59.947 [DefaultDispatcher-worker-1] INFO  LPACExecutor - Using lpac at: /nix/store/5qav3fcqr98jxr9wm051v5vn6az9k64w-lpac-2.3.0/bin/lpac
+2025-12-04 07:45:59.968 [DefaultDispatcher-worker-11] INFO  LPACExecutor - lpac stderr output -> error: create mbim device from path failed: Couldn't query file info: Error when getting information for file “/dev/cdc-wdm0”: No such file or directory
+2025-12-04 07:45:59.968 [DefaultDispatcher-worker-7] INFO  LPACExecutor - lpac stdout output -> {"type":"lpa","payload":{"code":-1,"message":"euicc_init","data":""}}
+2025-12-04 07:45:59.969 [DefaultDispatcher-worker-7] ERROR ProfileRoutes - 获取配置文件列表失败
+moe.sekiu.minilpa.exception.LPAOperationFailureException: euicc_init
+	at moe.sekiu.minilpa.model.LPACIO$Payload$LPA.assertSuccess(LPACIO.kt:59)
+	at moe.sekiu.minilpa.lpa.LPACExecutor.execute(LPACExecutor.kt:191)
+	at moe.sekiu.minilpa.lpa.LPACExecutor$execute$1.invokeSuspend(LPACExecutor.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.UndispatchedCoroutine.afterResume(CoroutineContext.kt:266)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:28)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:111)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:99)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:811)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:715)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:702)
+2025-12-04 07:46:00.386 [DefaultDispatcher-worker-15] INFO  DeviceRoutes - 获取设备列表
+2025-12-04 07:46:00.387 [DefaultDispatcher-worker-15] INFO  LPACExecutor - lpac command input -> driver apdu list
+2025-12-04 07:46:00.387 [DefaultDispatcher-worker-15] INFO  LPACExecutor - Using lpac at: /nix/store/5qav3fcqr98jxr9wm051v5vn6az9k64w-lpac-2.3.0/bin/lpac
+2025-12-04 07:46:00.412 [DefaultDispatcher-worker-18] ERROR DeviceRoutes - 获取设备列表失败
+moe.sekiu.minilpa.exception.OperationFailureException: lpac output not captured
+	at moe.sekiu.minilpa.lpa.LPACExecutor.execute(LPACExecutor.kt:190)
+	at moe.sekiu.minilpa.lpa.LPACExecutor$execute$1.invokeSuspend(LPACExecutor.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.UndispatchedCoroutine.afterResume(CoroutineContext.kt:266)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:28)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:111)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:99)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:811)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:715)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:702)
+2025-12-04 07:46:00.417 [DefaultDispatcher-worker-7] INFO  NotificationRoutes - 获取通知列表
+2025-12-04 07:46:00.417 [DefaultDispatcher-worker-7] INFO  LPACExecutor - lpac command input -> notification list
+2025-12-04 07:46:00.417 [DefaultDispatcher-worker-7] INFO  LPACExecutor - Using lpac at: /nix/store/5qav3fcqr98jxr9wm051v5vn6az9k64w-lpac-2.3.0/bin/lpac
+2025-12-04 07:46:00.439 [DefaultDispatcher-worker-15] INFO  LPACExecutor - lpac stdout output -> {"type":"lpa","payload":{"code":-1,"message":"euicc_init","data":""}}
+2025-12-04 07:46:00.439 [DefaultDispatcher-worker-18] INFO  LPACExecutor - lpac stderr output -> error: create mbim device from path failed: Couldn't query file info: Error when getting information for file “/dev/cdc-wdm0”: No such file or directory
+2025-12-04 07:46:00.440 [DefaultDispatcher-worker-15] ERROR NotificationRoutes - 获取通知列表失败
+moe.sekiu.minilpa.exception.LPAOperationFailureException: euicc_init
+	at moe.sekiu.minilpa.model.LPACIO$Payload$LPA.assertSuccess(LPACIO.kt:59)
+	at moe.sekiu.minilpa.lpa.LPACExecutor.execute(LPACExecutor.kt:191)
+	at moe.sekiu.minilpa.lpa.LPACExecutor$execute$1.invokeSuspend(LPACExecutor.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.UndispatchedCoroutine.afterResume(CoroutineContext.kt:266)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:28)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:111)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:99)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:811)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:715)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:702)
+2025-12-04 07:46:00.825 [DefaultDispatcher-worker-21] INFO  DeviceRoutes - 获取设备列表
+2025-12-04 07:46:00.826 [DefaultDispatcher-worker-21] INFO  LPACExecutor - lpac command input -> driver apdu list
+2025-12-04 07:46:00.826 [DefaultDispatcher-worker-21] INFO  LPACExecutor - Using lpac at: /nix/store/5qav3fcqr98jxr9wm051v5vn6az9k64w-lpac-2.3.0/bin/lpac
+2025-12-04 07:46:00.846 [DefaultDispatcher-worker-28] ERROR DeviceRoutes - 获取设备列表失败
+moe.sekiu.minilpa.exception.OperationFailureException: lpac output not captured
+	at moe.sekiu.minilpa.lpa.LPACExecutor.execute(LPACExecutor.kt:190)
+	at moe.sekiu.minilpa.lpa.LPACExecutor$execute$1.invokeSuspend(LPACExecutor.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.UndispatchedCoroutine.afterResume(CoroutineContext.kt:266)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:28)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:111)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:99)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:811)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:715)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:702)
+2025-12-04 07:46:00.851 [DefaultDispatcher-worker-24] INFO  ChipRoutes - 获取芯片信息
+2025-12-04 07:46:00.852 [DefaultDispatcher-worker-24] INFO  LPACExecutor - lpac command input -> chip info
+2025-12-04 07:46:00.852 [DefaultDispatcher-worker-24] INFO  LPACExecutor - Using lpac at: /nix/store/5qav3fcqr98jxr9wm051v5vn6az9k64w-lpac-2.3.0/bin/lpac
+2025-12-04 07:46:00.872 [DefaultDispatcher-worker-24] INFO  LPACExecutor - lpac stdout output -> {"type":"lpa","payload":{"code":-1,"message":"euicc_init","data":""}}
+2025-12-04 07:46:00.872 [DefaultDispatcher-worker-1] INFO  LPACExecutor - lpac stderr output -> error: create mbim device from path failed: Couldn't query file info: Error when getting information for file “/dev/cdc-wdm0”: No such file or directory
+2025-12-04 07:46:00.873 [DefaultDispatcher-worker-1] ERROR ChipRoutes - 获取芯片信息失败
+moe.sekiu.minilpa.exception.LPAOperationFailureException: euicc_init
+	at moe.sekiu.minilpa.model.LPACIO$Payload$LPA.assertSuccess(LPACIO.kt:59)
+	at moe.sekiu.minilpa.lpa.LPACExecutor.execute(LPACExecutor.kt:191)
+	at moe.sekiu.minilpa.lpa.LPACExecutor$execute$1.invokeSuspend(LPACExecutor.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.UndispatchedCoroutine.afterResume(CoroutineContext.kt:266)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:28)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:111)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:99)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:811)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:715)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:702)
+2025-12-04 07:46:01.340 [DefaultDispatcher-worker-11] INFO  DeviceRoutes - 获取设备列表
+2025-12-04 07:46:01.340 [DefaultDispatcher-worker-11] INFO  LPACExecutor - lpac command input -> driver apdu list
+2025-12-04 07:46:01.340 [DefaultDispatcher-worker-11] INFO  LPACExecutor - Using lpac at: /nix/store/5qav3fcqr98jxr9wm051v5vn6az9k64w-lpac-2.3.0/bin/lpac
+2025-12-04 07:46:01.360 [DefaultDispatcher-worker-25] ERROR DeviceRoutes - 获取设备列表失败
+moe.sekiu.minilpa.exception.OperationFailureException: lpac output not captured
+	at moe.sekiu.minilpa.lpa.LPACExecutor.execute(LPACExecutor.kt:190)
+	at moe.sekiu.minilpa.lpa.LPACExecutor$execute$1.invokeSuspend(LPACExecutor.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.UndispatchedCoroutine.afterResume(CoroutineContext.kt:266)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:28)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:111)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:99)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:811)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:715)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:702)
+2025-12-04 07:46:01.940 [DefaultDispatcher-worker-21] INFO  DeviceRoutes - 获取设备列表
+2025-12-04 07:46:01.940 [DefaultDispatcher-worker-21] INFO  LPACExecutor - lpac command input -> driver apdu list
+2025-12-04 07:46:01.940 [DefaultDispatcher-worker-21] INFO  LPACExecutor - Using lpac at: /nix/store/5qav3fcqr98jxr9wm051v5vn6az9k64w-lpac-2.3.0/bin/lpac
+2025-12-04 07:46:01.966 [DefaultDispatcher-worker-7] ERROR DeviceRoutes - 获取设备列表失败
+moe.sekiu.minilpa.exception.OperationFailureException: lpac output not captured
+	at moe.sekiu.minilpa.lpa.LPACExecutor.execute(LPACExecutor.kt:190)
+	at moe.sekiu.minilpa.lpa.LPACExecutor$execute$1.invokeSuspend(LPACExecutor.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.UndispatchedCoroutine.afterResume(CoroutineContext.kt:266)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:28)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:111)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:99)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:811)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:715)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:702)
+2025-12-04 07:46:01.971 [DefaultDispatcher-worker-1] INFO  ProfileRoutes - 获取配置文件列表
+2025-12-04 07:46:01.971 [DefaultDispatcher-worker-1] INFO  LPACExecutor - lpac command input -> profile list
+2025-12-04 07:46:01.971 [DefaultDispatcher-worker-1] INFO  LPACExecutor - Using lpac at: /nix/store/5qav3fcqr98jxr9wm051v5vn6az9k64w-lpac-2.3.0/bin/lpac
+2025-12-04 07:46:01.994 [DefaultDispatcher-worker-21] INFO  LPACExecutor - lpac stdout output -> {"type":"lpa","payload":{"code":-1,"message":"euicc_init","data":""}}
+2025-12-04 07:46:01.994 [DefaultDispatcher-worker-11] INFO  LPACExecutor - lpac stderr output -> error: create mbim device from path failed: Couldn't query file info: Error when getting information for file “/dev/cdc-wdm0”: No such file or directory
+2025-12-04 07:46:01.995 [DefaultDispatcher-worker-11] ERROR ProfileRoutes - 获取配置文件列表失败
+moe.sekiu.minilpa.exception.LPAOperationFailureException: euicc_init
+	at moe.sekiu.minilpa.model.LPACIO$Payload$LPA.assertSuccess(LPACIO.kt:59)
+	at moe.sekiu.minilpa.lpa.LPACExecutor.execute(LPACExecutor.kt:191)
+	at moe.sekiu.minilpa.lpa.LPACExecutor$execute$1.invokeSuspend(LPACExecutor.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.UndispatchedCoroutine.afterResume(CoroutineContext.kt:266)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:28)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:111)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:99)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:811)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:715)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:702)
+2025-12-04 07:46:02.361 [DefaultDispatcher-worker-7] INFO  DeviceRoutes - 获取设备列表
+2025-12-04 07:46:02.362 [DefaultDispatcher-worker-7] INFO  LPACExecutor - lpac command input -> driver apdu list
+2025-12-04 07:46:02.362 [DefaultDispatcher-worker-7] INFO  LPACExecutor - Using lpac at: /nix/store/5qav3fcqr98jxr9wm051v5vn6az9k64w-lpac-2.3.0/bin/lpac
+2025-12-04 07:46:02.382 [DefaultDispatcher-worker-21] ERROR DeviceRoutes - 获取设备列表失败
+moe.sekiu.minilpa.exception.OperationFailureException: lpac output not captured
+	at moe.sekiu.minilpa.lpa.LPACExecutor.execute(LPACExecutor.kt:190)
+	at moe.sekiu.minilpa.lpa.LPACExecutor$execute$1.invokeSuspend(LPACExecutor.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.UndispatchedCoroutine.afterResume(CoroutineContext.kt:266)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:28)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:111)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:99)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:811)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:715)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:702)
+2025-12-04 07:46:02.386 [DefaultDispatcher-worker-26] INFO  NotificationRoutes - 获取通知列表
+2025-12-04 07:46:02.386 [DefaultDispatcher-worker-26] INFO  LPACExecutor - lpac command input -> notification list
+2025-12-04 07:46:02.386 [DefaultDispatcher-worker-26] INFO  LPACExecutor - Using lpac at: /nix/store/5qav3fcqr98jxr9wm051v5vn6az9k64w-lpac-2.3.0/bin/lpac
+2025-12-04 07:46:02.408 [DefaultDispatcher-worker-26] INFO  LPACExecutor - lpac stdout output -> {"type":"lpa","payload":{"code":-1,"message":"euicc_init","data":""}}
+2025-12-04 07:46:02.408 [DefaultDispatcher-worker-15] INFO  LPACExecutor - lpac stderr output -> error: create mbim device from path failed: Couldn't query file info: Error when getting information for file “/dev/cdc-wdm0”: No such file or directory
+2025-12-04 07:46:02.409 [DefaultDispatcher-worker-15] ERROR NotificationRoutes - 获取通知列表失败
+moe.sekiu.minilpa.exception.LPAOperationFailureException: euicc_init
+	at moe.sekiu.minilpa.model.LPACIO$Payload$LPA.assertSuccess(LPACIO.kt:59)
+	at moe.sekiu.minilpa.lpa.LPACExecutor.execute(LPACExecutor.kt:191)
+	at moe.sekiu.minilpa.lpa.LPACExecutor$execute$1.invokeSuspend(LPACExecutor.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.UndispatchedCoroutine.afterResume(CoroutineContext.kt:266)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:28)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:111)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:99)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:811)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:715)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:702)
+2025-12-04 07:46:02.996 [DefaultDispatcher-worker-7] INFO  DeviceRoutes - 获取设备列表
+2025-12-04 07:46:02.996 [DefaultDispatcher-worker-7] INFO  LPACExecutor - lpac command input -> driver apdu list
+2025-12-04 07:46:02.996 [DefaultDispatcher-worker-7] INFO  LPACExecutor - Using lpac at: /nix/store/5qav3fcqr98jxr9wm051v5vn6az9k64w-lpac-2.3.0/bin/lpac
+2025-12-04 07:46:03.019 [DefaultDispatcher-worker-26] ERROR DeviceRoutes - 获取设备列表失败
+moe.sekiu.minilpa.exception.OperationFailureException: lpac output not captured
+	at moe.sekiu.minilpa.lpa.LPACExecutor.execute(LPACExecutor.kt:190)
+	at moe.sekiu.minilpa.lpa.LPACExecutor$execute$1.invokeSuspend(LPACExecutor.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.UndispatchedCoroutine.afterResume(CoroutineContext.kt:266)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:28)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:111)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:99)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:811)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:715)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:702)
+2025-12-04 07:46:03.023 [DefaultDispatcher-worker-11] INFO  ChipRoutes - 获取芯片信息
+2025-12-04 07:46:03.024 [DefaultDispatcher-worker-11] INFO  LPACExecutor - lpac command input -> chip info
+2025-12-04 07:46:03.024 [DefaultDispatcher-worker-11] INFO  LPACExecutor - Using lpac at: /nix/store/5qav3fcqr98jxr9wm051v5vn6az9k64w-lpac-2.3.0/bin/lpac
+2025-12-04 07:46:03.045 [DefaultDispatcher-worker-21] INFO  LPACExecutor - lpac stdout output -> {"type":"lpa","payload":{"code":-1,"message":"euicc_init","data":""}}
+2025-12-04 07:46:03.045 [DefaultDispatcher-worker-26] INFO  LPACExecutor - lpac stderr output -> error: create mbim device from path failed: Couldn't query file info: Error when getting information for file “/dev/cdc-wdm0”: No such file or directory
+2025-12-04 07:46:03.046 [DefaultDispatcher-worker-26] ERROR ChipRoutes - 获取芯片信息失败
+moe.sekiu.minilpa.exception.LPAOperationFailureException: euicc_init
+	at moe.sekiu.minilpa.model.LPACIO$Payload$LPA.assertSuccess(LPACIO.kt:59)
+	at moe.sekiu.minilpa.lpa.LPACExecutor.execute(LPACExecutor.kt:191)
+	at moe.sekiu.minilpa.lpa.LPACExecutor$execute$1.invokeSuspend(LPACExecutor.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.UndispatchedCoroutine.afterResume(CoroutineContext.kt:266)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:28)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:111)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:99)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:811)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:715)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:702)
+2025-12-04 07:46:03.672 [DefaultDispatcher-worker-28] INFO  DeviceRoutes - 获取设备列表
+2025-12-04 07:46:03.672 [DefaultDispatcher-worker-28] INFO  LPACExecutor - lpac command input -> driver apdu list
+2025-12-04 07:46:03.672 [DefaultDispatcher-worker-28] INFO  LPACExecutor - Using lpac at: /nix/store/5qav3fcqr98jxr9wm051v5vn6az9k64w-lpac-2.3.0/bin/lpac
+2025-12-04 07:46:03.698 [DefaultDispatcher-worker-5] ERROR DeviceRoutes - 获取设备列表失败
+moe.sekiu.minilpa.exception.OperationFailureException: lpac output not captured
+	at moe.sekiu.minilpa.lpa.LPACExecutor.execute(LPACExecutor.kt:190)
+	at moe.sekiu.minilpa.lpa.LPACExecutor$execute$1.invokeSuspend(LPACExecutor.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.UndispatchedCoroutine.afterResume(CoroutineContext.kt:266)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:28)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:111)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:99)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:811)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:715)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:702)
+2025-12-04 07:46:03.703 [DefaultDispatcher-worker-24] INFO  ProfileRoutes - 获取配置文件列表
+2025-12-04 07:46:03.703 [DefaultDispatcher-worker-24] INFO  LPACExecutor - lpac command input -> profile list
+2025-12-04 07:46:03.703 [DefaultDispatcher-worker-24] INFO  LPACExecutor - Using lpac at: /nix/store/5qav3fcqr98jxr9wm051v5vn6az9k64w-lpac-2.3.0/bin/lpac
+2025-12-04 07:46:03.725 [DefaultDispatcher-worker-28] INFO  LPACExecutor - lpac stdout output -> {"type":"lpa","payload":{"code":-1,"message":"euicc_init","data":""}}
+2025-12-04 07:46:03.725 [DefaultDispatcher-worker-15] INFO  LPACExecutor - lpac stderr output -> error: create mbim device from path failed: Couldn't query file info: Error when getting information for file “/dev/cdc-wdm0”: No such file or directory
+2025-12-04 07:46:03.726 [DefaultDispatcher-worker-15] ERROR ProfileRoutes - 获取配置文件列表失败
+moe.sekiu.minilpa.exception.LPAOperationFailureException: euicc_init
+	at moe.sekiu.minilpa.model.LPACIO$Payload$LPA.assertSuccess(LPACIO.kt:59)
+	at moe.sekiu.minilpa.lpa.LPACExecutor.execute(LPACExecutor.kt:191)
+	at moe.sekiu.minilpa.lpa.LPACExecutor$execute$1.invokeSuspend(LPACExecutor.kt)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.UndispatchedCoroutine.afterResume(CoroutineContext.kt:266)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:28)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:111)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:99)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:811)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:715)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:702)

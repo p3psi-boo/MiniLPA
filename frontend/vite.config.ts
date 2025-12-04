@@ -3,6 +3,9 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
 	plugins: [sveltekit()],
+	resolve: {
+		extensions: ['.js', '.ts', '.svelte', '.svelte.js', '.svelte.ts'],
+	},
 	server: {
 		proxy: {
 			// API 代理到后端
