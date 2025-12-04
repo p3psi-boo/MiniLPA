@@ -13,3 +13,25 @@
 build
 eum-manifest.json
 ci-manifest.json
+
+# Nix
+.direnv/
+result
+result-*
+
+# Backend (Ktor/Gradle)
+backend/.gradle/
+backend/build/
+backend/out/
+backend/*.log
+
+# Frontend (Svelte/Node.js)
+frontend/node_modules/
+frontend/.svelte-kit/
+frontend/build/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+frontend/package-lock.json
+frontend/pnpm-lock.yaml
+frontend/yarn.lock
