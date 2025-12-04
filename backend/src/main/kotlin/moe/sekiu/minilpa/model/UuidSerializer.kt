@@ -1,5 +1,6 @@
 package moe.sekiu.minilpa.model
 
+import kotlin.uuid.ExperimentalUuidApi
 import kotlin.uuid.Uuid
 import kotlinx.serialization.KSerializer
 import kotlinx.serialization.descriptors.PrimitiveKind
@@ -8,6 +9,7 @@ import kotlinx.serialization.descriptors.SerialDescriptor
 import kotlinx.serialization.encoding.Decoder
 import kotlinx.serialization.encoding.Encoder
 
+@OptIn(ExperimentalUuidApi::class)
 object UuidSerializer : KSerializer<Uuid>
 {
     override val descriptor : SerialDescriptor = PrimitiveSerialDescriptor("Uuid", PrimitiveKind.STRING)

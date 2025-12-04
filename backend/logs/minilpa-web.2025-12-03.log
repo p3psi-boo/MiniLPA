@@ -1,0 +1,4 @@
+2025-12-03 11:05:12.869 [DefaultDispatcher-worker-2] INFO  ktor.application - Autoreload is disabled because the development mode is off.
+2025-12-03 11:05:13.028 [DefaultDispatcher-worker-2] INFO  ktor.application - Application started in 0.179 seconds.
+2025-12-03 11:05:13.041 [DefaultDispatcher-worker-1] INFO  ktor.application - Responding at http://127.0.0.1:8080
+2025-12-03 11:05:14.070 [main] INFO  m.sekiu.minilpa.util.BrowserLauncher - 已在 Linux 上打开浏览器: http://localhost:8080

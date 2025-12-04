@@ -1,6 +1,6 @@
 plugins {
-    kotlin("jvm") version "1.9.24"
-    kotlin("plugin.serialization") version "1.9.24"
+    kotlin("jvm") version "2.0.21"
+    kotlin("plugin.serialization") version "2.0.21"
     application
 }
 
@@ -8,26 +8,37 @@ group = "moe.sekiu.minilpa"
 version = "2.0.0"
 
 repositories {
+    // 优先使用国内镜像
+    maven {
+        setUrl("https://maven.aliyun.com/repository/public/")
+    }
+    maven {
+        setUrl("https://maven.aliyun.com/repository/google/")
+    }
+    maven {
+        setUrl("https://maven.aliyun.com/repository/gradle-plugin/")
+    }
     mavenCentral()
+    google()
 }
 
 dependencies {
-    // Ktor Server
-    implementation("io.ktor:ktor-server-core:3.0.0-beta-2")
-    implementation("io.ktor:ktor-server-cio:3.0.0-beta-2")
-    implementation("io.ktor:ktor-server-websockets:3.0.0-beta-2")
-    implementation("io.ktor:ktor-server-content-negotiation:3.0.0-beta-2")
-    implementation("io.ktor:ktor-server-cors:3.0.0-beta-2")
-    implementation("io.ktor:ktor-serialization-kotlinx-json:3.0.0-beta-2")
+    // Ktor Server (使用稳定版本)
+    implementation("io.ktor:ktor-server-core:2.3.12")
+    implementation("io.ktor:ktor-server-cio:2.3.12")
+    implementation("io.ktor:ktor-server-websockets:2.3.12")
+    implementation("io.ktor:ktor-server-content-negotiation:2.3.12")
+    implementation("io.ktor:ktor-server-cors:2.3.12")
+    implementation("io.ktor:ktor-serialization-kotlinx-json:2.3.12")
 
     // Kotlin 核心库
     implementation("org.jetbrains.kotlin:kotlin-stdlib")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.9.0-RC.2")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.1")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.2")
 
     // 日志
     implementation("ch.qos.logback:logback-classic:1.5.7")
-    implementation("org.slf4j:slf4j-api:2.1.0-alpha1")
+    implementation("org.slf4j:slf4j-api:2.0.16")
 
     // 工具库
     implementation("org.apache.commons:commons-lang3:3.17.0")
@@ -42,7 +53,7 @@ dependencies {
 
     // 测试
     testImplementation(kotlin("test"))
-    testImplementation("io.ktor:ktor-server-test-host:3.0.0-beta-2")
+    testImplementation("io.ktor:ktor-server-test-host:2.3.12")
 }
 
 application {

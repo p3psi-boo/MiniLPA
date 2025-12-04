@@ -14,6 +14,7 @@ import moe.sekiu.minilpa.api.configureChipRoutes
 import moe.sekiu.minilpa.api.configureDeviceRoutes
 import moe.sekiu.minilpa.api.configureNotificationRoutes
 import moe.sekiu.minilpa.api.configureProfileRoutes
+import moe.sekiu.minilpa.api.configureQRCodeRoutes
 import moe.sekiu.minilpa.util.BrowserLauncher
 import moe.sekiu.minilpa.ws.configureProgressWebSocket
 import java.time.Duration
@@ -87,6 +88,7 @@ fun Application.module() {
             configureChipRoutes()
             configureProfileRoutes()
             configureNotificationRoutes()
+            configureQRCodeRoutes()
         }
 
         // WebSocket 路由

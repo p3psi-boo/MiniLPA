@@ -14,3 +14,8 @@ data class RemoteCard(val host : String, val port : Int) : Device
 {
     override fun toString() : String = "$host:$port"
 }
+
+/**
+ * 本地设备类型别名（指向 Driver）
+ */
+typealias LocalDevice = Driver

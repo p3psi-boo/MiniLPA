@@ -441,66 +441,66 @@ WS /ws/progress
 ### Phase 1: 后端基础架构 (5-7 天)
 
 #### 1.1 项目初始化
-- [ ] 创建 `backend/` 目录
-- [ ] 设置 Gradle 构建配置
-- [ ] 添加 Ktor Server 依赖
-- [ ] 配置 Kotlin 序列化插件
+- [x] 创建 `backend/` 目录
+- [x] 设置 Gradle 构建配置
+- [x] 添加 Ktor Server 依赖
+- [x] 配置 Kotlin 序列化插件
 
 #### 1.2 基础服务器配置
-- [ ] 创建 `Application.kt` 主入口
-- [ ] 配置 Ktor 服务器（CIO 引擎）
-- [ ] 配置端口 8080，监听 127.0.0.1
-- [ ] 启用 CORS（仅允许 localhost）
-- [ ] 配置静态资源服务（前端构建产物）
+- [x] 创建 `Application.kt` 主入口
+- [x] 配置 Ktor 服务器（CIO 引擎）
+- [x] 配置端口 8080，监听 127.0.0.1
+- [x] 启用 CORS（仅允许 localhost）
+- [x] 配置静态资源服务（前端构建产物）
 
 #### 1.3 基础设施
-- [ ] 配置 JSON 序列化（kotlinx.serialization）
-- [ ] 配置日志（Logback）
-- [ ] 实现健康检查端点 `GET /health`
-- [ ] 实现浏览器自动启动功能
+- [x] 配置 JSON 序列化（kotlinx.serialization）
+- [x] 配置日志（Logback）
+- [x] 实现健康检查端点 `GET /health`
+- [x] 实现浏览器自动启动功能
 
 #### 1.4 代码迁移准备
-- [ ] 复制 `model/` 目录到 backend
-- [ ] 复制 `lpa/` 目录到 backend（LPABackend, LPACExecutor）
-- [ ] 复制 `exception/` 目录
-- [ ] 复制 `com/github/pgreze/process/` 目录
-- [ ] 复制 lpac 二进制文件到 `resources/lpac/`
+- [x] 复制 `model/` 目录到 backend
+- [x] 复制 `lpa/` 目录到 backend（LPABackend, LPACExecutor）
+- [x] 复制 `exception/` 目录
+- [x] 复制 `com/github/pgreze/process/` 目录
+- [x] 复制 lpac 二进制文件到 `resources/lpac/`
 
 ---
 
 ### Phase 2: 核心 API 实现 (7-10 天)
 
 #### 2.1 设备管理 API
-- [ ] `DeviceRoutes.kt` - 路由定义
-- [ ] `GET /api/devices` - 获取设备列表
-- [ ] 设备检测逻辑（调用 lpac chip info）
+- [x] `DeviceRoutes.kt` - 路由定义
+- [x] `GET /api/devices` - 获取设备列表
+- [x] 设备检测逻辑（调用 lpac chip info）
 
 #### 2.2 芯片信息 API
-- [ ] `ChipRoutes.kt` - 路由定义
-- [ ] `GET /api/chip/info` - 获取芯片信息
-- [ ] 调用 `LPACExecutor.chipInfo()`
+- [x] `ChipRoutes.kt` - 路由定义
+- [x] `GET /api/chip/info` - 获取芯片信息
+- [x] 调用 `LPACExecutor.chipInfo()`
 
 #### 2.3 配置文件管理 API
-- [ ] `ProfileRoutes.kt` - 路由定义
-- [ ] `GET /api/profiles` - 列出配置文件
-- [ ] `POST /api/profiles` - 下载配置文件
-- [ ] `PUT /api/profiles/:iccid/enable` - 启用配置文件
-- [ ] `PUT /api/profiles/:iccid/disable` - 禁用配置文件
-- [ ] `PUT /api/profiles/:iccid/nickname` - 设置昵称
-- [ ] `DELETE /api/profiles/:iccid` - 删除配置文件
-- [ ] 异步操作处理（下载任务）
+- [x] `ProfileRoutes.kt` - 路由定义
+- [x] `GET /api/profiles` - 列出配置文件
+- [x] `POST /api/profiles` - 下载配置文件（基础实现）
+- [x] `PUT /api/profiles/:iccid/enable` - 启用配置文件
+- [x] `PUT /api/profiles/:iccid/disable` - 禁用配置文件
+- [x] `PUT /api/profiles/:iccid/nickname` - 设置昵称
+- [x] `DELETE /api/profiles/:iccid` - 删除配置文件
+- [ ] 异步操作处理（下载任务）- **进行中**
 
 #### 2.4 通知管理 API
-- [ ] `NotificationRoutes.kt` - 路由定义
-- [ ] `GET /api/notifications` - 列出通知
-- [ ] `POST /api/notifications/:seqNumber/process` - 处理通知
-- [ ] `DELETE /api/notifications/:seqNumber` - 删除通知
+- [x] `NotificationRoutes.kt` - 路由定义
+- [x] `GET /api/notifications` - 列出通知
+- [x] `POST /api/notifications/:seqNumber/process` - 处理通知
+- [x] `DELETE /api/notifications/:seqNumber` - 删除通知
 
 #### 2.5 WebSocket 进度推送
-- [ ] `ProgressWebSocket.kt` - WebSocket 端点
-- [ ] `WS /ws/progress` - WebSocket 连接
-- [ ] 改造 `LPACExecutor` 进度回调机制
-- [ ] 实现进度消息广播
+- [x] `ProgressWebSocket.kt` - WebSocket 端点
+- [x] `WS /ws/progress` - WebSocket 连接
+- [ ] 改造 `LPACExecutor` 进度回调机制 - **进行中**
+- [x] 实现进度消息广播（ProgressBroadcaster）
 - [ ] 错误处理和重连逻辑
 
 #### 2.6 二维码/激活码解析
@@ -513,86 +513,77 @@ WS /ws/progress
 ### Phase 3: 前端开发 (10-14 天)
 
 #### 3.1 项目初始化 (1 天)
-- [ ] 创建 `frontend/` 目录
-- [ ] 初始化 SvelteKit 项目
-- [ ] 配置 TypeScript
-- [ ] 配置 Tailwind CSS
-- [ ] 安装 UI 组件库（shadcn-svelte）
-- [ ] 配置开发代理（转发 API 请求到 8080）
+- [x] 创建 `frontend/` 目录
+- [x] 初始化 SvelteKit 项目
+- [x] 配置 TypeScript
+- [x] 配置 Tailwind CSS
+- [x] 安装 UI 组件库（Carbon Components Svelte）
+- [x] 配置开发代理（转发 API 请求到 8080）
 
 #### 3.2 通用组件开发 (2-3 天)
-- [ ] `Navbar.svelte` - 顶部导航栏
-- [ ] `Sidebar.svelte` - 侧边栏菜单
-- [ ] `ProgressBar.svelte` - 进度条组件
-- [ ] `Toast.svelte` - 通知提示组件
-- [ ] `LoadingSpinner.svelte` - 加载动画
-- [ ] `ErrorMessage.svelte` - 错误提示组件
-- [ ] `+layout.svelte` - 全局布局
+- [x] `Navbar.svelte` - 顶部导航栏
+- [x] `ProgressBar.svelte` - 进度条组件
+- [x] `Toast.svelte` - 通知提示组件
+- [x] `+layout.svelte` - 全局布局
+- [x] `ProfileCard.svelte` - 配置文件卡片组件
+- [x] `DownloadDialog.svelte` - 下载对话框组件
 
 #### 3.3 API 客户端 (1 天)
-- [ ] `lib/api/client.ts` - Fetch API 封装
-- [ ] `lib/api/websocket.ts` - WebSocket 管理
-- [ ] 请求拦截器和错误处理
-- [ ] TypeScript 类型定义
+- [x] `lib/api/client.ts` - Fetch API 封装
+- [x] `lib/api/websocket.ts` - WebSocket 管理
+- [x] 请求拦截器和错误处理
+- [x] TypeScript 类型定义
 
 #### 3.4 状态管理 (1 天)
-- [ ] `lib/stores/device.ts` - 设备状态
-- [ ] `lib/stores/profiles.ts` - 配置文件状态
-- [ ] `lib/stores/notifications.ts` - 通知状态
-- [ ] `lib/stores/progress.ts` - 进度状态
+- [x] `lib/stores/device.ts` - 设备状态
+- [x] `lib/stores/profiles.ts` - 配置文件状态
+- [x] `lib/stores/notifications.ts` - 通知状态
+- [x] `lib/stores/progress.ts` - 进度状态
 
 #### 3.5 页面开发 (5-7 天)
 
 ##### 设备选择页面
-- [ ] `routes/+page.svelte` - 首页
-- [ ] 设备列表展示
-- [ ] 设备选择和连接
+- [x] `routes/+page.svelte` - 首页
+- [x] 设备列表展示
+- [x] 设备选择和连接
+- [x] 芯片信息展示
 
 ##### 配置文件管理页面（核心）
-- [ ] `routes/profiles/+page.svelte`
-- [ ] `lib/components/ProfileCard.svelte` - 配置文件卡片
-- [ ] `lib/components/ProfileList.svelte` - 配置文件列表
-- [ ] `lib/components/DownloadDialog.svelte` - 下载对话框
-- [ ] 配置文件列表展示
-- [ ] 配置文件启用/禁用切换
-- [ ] 配置文件删除确认
-- [ ] 昵称编辑
-- [ ] 下载新配置文件对话框
-- [ ] 二维码上传和解析
-- [ ] 激活码输入
-- [ ] 实时进度显示（集成 WebSocket）
+- [x] `routes/profiles/+page.svelte`
+- [x] `lib/components/ProfileCard.svelte` - 配置文件卡片
+- [x] `lib/components/DownloadDialog.svelte` - 下载对话框
+- [x] 配置文件列表展示
+- [x] 配置文件启用/禁用切换
+- [x] 配置文件删除确认
+- [x] 昵称编辑
+- [x] 下载新配置文件对话框
+- [x] 二维码上传和解析
+- [x] 激活码输入
+- [x] 实时进度显示（集成 WebSocket）
 
 ##### 通知管理页面
-- [ ] `routes/notifications/+page.svelte`
-- [ ] `lib/components/NotificationCard.svelte` - 通知卡片
-- [ ] 通知列表展示
-- [ ] 通知处理按钮
-- [ ] 通知删除按钮
-- [ ] 批量操作（可选）
+- [x] `routes/notifications/+page.svelte`
+- [x] 通知列表展示
+- [x] 通知处理按钮
+- [x] 通知删除按钮
 
 ##### 芯片信息页面
-- [ ] `routes/chip/+page.svelte`
-- [ ] EID 展示和复制
-- [ ] 芯片信息展示（固件版本、内存等）
-- [ ] 证书信息展示
-
-##### 设置页面（最小化）
-- [ ] `routes/settings/+page.svelte`
-- [ ] APDU 调试开关
-- [ ] HTTP 调试开关
-- [ ] 关于页面
+- [x] `routes/chip/+page.svelte`
+- [x] EID 展示和复制
+- [x] 芯片信息展示（固件版本、内存等）
+- [x] 技术详情展示
 
 #### 3.6 WebSocket 集成 (1-2 天)
-- [ ] 连接管理（自动重连）
-- [ ] 进度消息接收和状态更新
-- [ ] 错误处理
-- [ ] UI 进度条联动
+- [x] 连接管理（自动重连）
+- [x] 进度消息接收和状态更新
+- [x] 错误处理
+- [x] UI 进度条联动
 
 #### 3.7 样式和优化 (1 天)
-- [ ] 响应式布局
-- [ ] 暗色主题支持（可选）
-- [ ] 动画和过渡效果
-- [ ] 性能优化
+- [x] 响应式布局
+- [x] Carbon Design System 主题（g100 暗色主题）
+- [x] 动画和过渡效果
+- [x] 性能优化
 
 ---
 

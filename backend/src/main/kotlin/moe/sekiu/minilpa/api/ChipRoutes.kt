@@ -18,7 +18,7 @@ fun Route.configureChipRoutes() {
             try {
                 logger.info("获取芯片信息")
                 val backend = LPAManager.getBackend()
-                val chipInfo = backend.chipInfo()
+                val chipInfo = backend.getChipInfo()
 
                 call.respond(chipInfo)
             } catch (e: Exception) {

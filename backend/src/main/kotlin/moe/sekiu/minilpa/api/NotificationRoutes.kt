@@ -19,7 +19,7 @@ fun Route.configureNotificationRoutes() {
             try {
                 logger.info("获取通知列表")
                 val backend = LPAManager.getBackend()
-                val notifications = backend.listNotification()
+                val notifications = backend.getNotificationList()
 
                 call.respond(mapOf("notifications" to notifications))
             } catch (e: Exception) {

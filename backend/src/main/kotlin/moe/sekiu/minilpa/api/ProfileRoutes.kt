@@ -5,9 +5,11 @@ import io.ktor.server.application.*
 import io.ktor.server.request.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
+import kotlinx.coroutines.launch
 import kotlinx.serialization.Serializable
 import moe.sekiu.minilpa.lpa.LPAManager
 import moe.sekiu.minilpa.model.ActivationCode
+import moe.sekiu.minilpa.ws.ProgressBroadcaster
 import org.slf4j.LoggerFactory
 
 private val logger = LoggerFactory.getLogger("ProfileRoutes")
@@ -34,7 +36,7 @@ fun Route.configureProfileRoutes() {
             try {
                 logger.info("获取配置文件列表")
                 val backend = LPAManager.getBackend()
-                val profiles = backend.listProfile()
+                val profiles = backend.getProfileList()
 
                 call.respond(mapOf("profiles" to profiles))
             } catch (e: Exception) {
@@ -48,21 +50,50 @@ fun Route.configureProfileRoutes() {
 
         /**
          * POST /api/profiles
-         * 下载新的配置文件
+         * 下载新的配置文件（异步，进度通过 WebSocket 推送）
          */
         post {
             try {
                 val request = call.receive<DownloadRequest>()
                 logger.info("下载配置文件: ${request.activationCode}")
 
-                val backend = LPAManager.getBackend()
-                val code = ActivationCode.parse(request.activationCode)
+                val backend = LPAManager.getBackend() as? moe.sekiu.minilpa.lpa.LPACExecutor
+                    ?: throw IllegalStateException("LPA 后端未初始化或类型不匹配")
+
+                val code = ActivationCode.of(request.activationCode)
                     ?: throw IllegalArgumentException("无效的激活码格式")
 
-                // TODO: 实现异步下载和进度推送
-                val profile = backend.downloadProfile(code, request.confirmationCode, request.imei)
+                // 构造 DownloadInfo 对象
+                val downloadInfo = moe.sekiu.minilpa.model.DownloadInfo(
+                    SMDP = code.SMDP,
+                    matchingId = code.MatchingID,
+                    confirmCode = request.confirmationCode,
+                    IMEI = request.imei
+                )
 
-                call.respond(HttpStatusCode.Created, profile)
+                // 立即返回 202 Accepted，表示请求已接受，异步处理
+                call.respond(HttpStatusCode.Accepted, mapOf("status" to "downloading"))
+
+                // 在后台协程中执行下载，通过 WebSocket 推送进度
+                launch {
+                    try {
+                        backend.downloadProfile(downloadInfo) { message, percent ->
+                            // 通过 ProgressBroadcaster 广播进度
+                            if (percent != null) {
+                                ProgressBroadcaster.sendProgress(message, percent)
+                            } else {
+                                ProgressBroadcaster.sendProgress(message, 0)
+                            }
+                        }
+                        // 下载完成
+                        ProgressBroadcaster.sendComplete("配置文件下载成功")
+                        logger.info("配置文件下载成功")
+                    } catch (e: Exception) {
+                        // 下载失败
+                        ProgressBroadcaster.sendError(e.message ?: "配置文件下载失败")
+                        logger.error("配置文件下载失败", e)
+                    }
+                }
             } catch (e: IllegalArgumentException) {
                 logger.error("激活码格式错误", e)
                 call.respond(
@@ -70,10 +101,10 @@ fun Route.configureProfileRoutes() {
                     mapOf("error" to e.message)
                 )
             } catch (e: Exception) {
-                logger.error("下载配置文件失败", e)
+                logger.error("下载配置文件请求处理失败", e)
                 call.respond(
                     HttpStatusCode.InternalServerError,
-                    mapOf("error" to (e.message ?: "下载配置文件失败"))
+                    mapOf("error" to (e.message ?: "下载配置文件请求处理失败"))
                 )
             }
         }
@@ -137,7 +168,7 @@ fun Route.configureProfileRoutes() {
                 logger.info("设置配置文件昵称: $iccid -> ${request.nickname}")
 
                 val backend = LPAManager.getBackend()
-                backend.setNickname(iccid, request.nickname)
+                backend.setProfileNickname(iccid, request.nickname)
 
                 call.respond(HttpStatusCode.OK, mapOf("status" to "success"))
             } catch (e: Exception) {
